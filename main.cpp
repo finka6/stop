@@ -1,0 +1,54 @@
+#include <iostream> 
+#include "minus.h" 
+#include "del.h" 
+#include "plus.h" 
+#include "umn.h" 
+
+using namespace std;
+
+int main()
+{
+	double a;
+	double b;
+	int count;
+	cout << "Vvedite pervoe chislo: ";
+	cin >> a;
+	cout << "Vvedite vtoroe chislo: ";
+	cin >> b;
+	cout << "vvdeite deystvie: " << endl;
+	cin >> count;
+
+
+	switch (count)
+	{
+
+	case 1:
+	{
+		cout << MySub(a, b) << endl;
+		break;
+	}
+	case 2:
+	{
+		cout << MyDiv(a, b) << endl;
+		break;
+	}
+	case 3:
+	{
+		cout << slozh(a, b) << endl;
+		break;
+	}
+	case 4:
+	{
+		cout << umn(a, b) << endl;
+		break;
+	}
+	default:
+	{
+		cout << "NO" << endl;
+	}
+	}
+
+	system("pause");
+	return 0;
+}
+
